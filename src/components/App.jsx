@@ -1,9 +1,14 @@
-function App() {
-  return (
-    <>
-      <h1>React Homework Template (Vite)</h1>
-    </>
-  );
-}
+import { AppBar } from "./AppBar/AppBar";
+import { Layout } from "./Layout/Layout";
+import { TaskForm } from "./TaskForm/TaskForm";
+import { TaskList } from "./TaskList/TaskList";
 
-export default App;
+export const App = () => {
+  return (
+    <Layout>
+      <AppBar />
+      <TaskForm />
+      <TaskList />
+    </Layout>
+  );
+};
